@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&display=swap');
+    </style>
+    <!-- <style>
+      @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+    </style> -->
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Paleblue: 'hsl(225, 100%, 94%)',
+            Brightblue: 'hsl(245, 75%, 52%)',
+            Verypaleblue: 'hsl(225, 100%, 98%)',
+            Desaturatedblue: 'hsl(224, 23%, 55%)',
+            Darkblue: 'hsl(223, 47%, 23%)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-Paleblue h-screen flex items-center justify-center p-6" style="font-family: 'Red Hat Display', sans-serif;">
+
+  <!-- Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order -->
+
+  <div class="max-h-md bg-white rounded-xl overflow-hidden shadow-lg md:max-w-2xl">
+    <div class="md:flex flex-col w-96">
+      <div class="sm:shrink">
+        <img src="images/illustration-hero.svg" alt="Hero Image" class="h-64 w-full object-cover md:h-48 md:w-full">
+      </div>
+      <div class="flex flex-col items-center justify-center max-h-full p-10 sm:max-h-xl">
+        <h2 class="text-center font-black text-3xl text-Darkblue tracking-wide" >Order Summary</h2>
+        <p class="text-center text-Desaturatedblue tracking-wider mt-3 ">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+          <div class=" bg-Verypaleblue flex flex-row rounded-lg items-center justify-center p-3 mt-4 ">
+            <div class="flex justify-center align-center mr-20">
+              <img src="images/icon-music.svg" alt="music icon" class="mr-5 ml-2">
+              <div>
+                <p class="text-Darkblue font-black" >Annual Plan</p>
+                <p class="text-Desaturatedblue tracking-wider">$59.99/year</p>
+              </div>
+            </div>
+            <a href="#" class="text-Brightblue underline hover:no-underline"> Change</a>
+          </div>
+          <button class="mt-5 bg-Brightblue text-white rounded-lg px-20 py-3 text-sm hover:bg-indigo-400">Proceed to Payment</button>
+          <a href="" class="mt-4 text-Desaturatedblue hover:text-black ">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
