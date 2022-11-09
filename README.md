@@ -30,7 +30,7 @@ This is a solution to the[Order summary card challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Github](https://github.com/ramz04/Order-Summary-Card/)
-- Live Site URL: [Vercel](https://product-card-neon.vercel.app/)
+- Live Site URL: [Vercel](https://order-summary-card-dun.vercel.app/)
 
 ### Built with
 
