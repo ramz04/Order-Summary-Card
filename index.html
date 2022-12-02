@@ -24,6 +24,10 @@
             Verypaleblue: 'hsl(225, 100%, 98%)',
             Desaturatedblue: 'hsl(224, 23%, 55%)',
             Darkblue: 'hsl(223, 47%, 23%)',
+          },
+          backgroundImage:{
+            'pattern': "url('images/pattern-background-desktop.svg')",
+            'mbpattern':"url('images/pattern-background-desktop.svg')"
           }
         }
       }
@@ -36,50 +40,36 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-Paleblue h-screen flex items-center justify-center p-6" style="font-family: 'Red Hat Display', sans-serif;">
-
-  <!-- Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order -->
-
-  <div class="max-h-md bg-white rounded-xl overflow-hidden shadow-lg md:max-w-2xl">
-    <div class="md:flex flex-col w-96">
-      <div class="sm:shrink">
-        <img src="images/illustration-hero.svg" alt="Hero Image" class="h-64 w-full object-cover md:h-48 md:w-full">
-      </div>
-      <div class="flex flex-col items-center justify-center max-h-full p-10 sm:max-h-xl">
-        <h2 class="text-center font-black text-3xl text-Darkblue tracking-wide" >Order Summary</h2>
-        <p class="text-center text-Desaturatedblue tracking-wider mt-3 ">You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
-          <div class=" bg-Verypaleblue flex flex-row rounded-lg items-center justify-center p-3 mt-4 ">
-            <div class="flex justify-center align-center mr-20">
-              <img src="images/icon-music.svg" alt="music icon" class="mr-5 ml-2">
-              <div>
-                <p class="text-Darkblue font-black" >Annual Plan</p>
-                <p class="text-Desaturatedblue tracking-wider">$59.99/year</p>
+<body class="bg-Paleblue bg-mbpattern md:pattern bg-blend-multiply object-cover bg-repeat-x h-screen " style="font-family: 'Red Hat Display', sans-serif;">
+  <main class="p-4 h-[92%] flex items-center justify-center">
+    <div class="rounded-2xl bg-white shadow-lg w-[320px]  md:w-[360px]">
+      <div class="md:flex flex-col">
+        <div class="">
+           <img src="images/illustration-hero.svg" alt="Hero Image" class="object-contain rounded-t-2xl">
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-2xl opaccity-0  justify-center  p-6 ">
+          <h2 class="text-center font-black text-3xl text-Darkblue tracking-wide" >Order Summary</h2>
+          <p class="text-center text-Desaturatedblue mt-3">You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+            <div class=" bg-Verypaleblue flex flex-row rounded-xl w-full  items-center justify-between gap-x-10 p-3  text-sm  mt-4 ">
+              <div class="flex justify-between gap-x-3  align-center">
+                <img src="images/icon-music.svg" alt="music icon" class="">
+                <div>
+                  <p class="text-Darkblue font-black" >Annual Plan</p>
+                  <p class="text-Desaturatedblue ">$59.99/year</p>
+                </div>
               </div>
+              <a href="#" class="text-Brightblue underline hover:no-underline hover:text-indigo-400"> Change</a>
             </div>
-            <a href="#" class="text-Brightblue underline hover:no-underline"> Change</a>
-          </div>
-          <button class="mt-5 bg-Brightblue text-white rounded-lg px-20 py-3 text-sm hover:bg-indigo-400 shadow-lg">Proceed to Payment</button>
-          <a href="" class="mt-4 text-Desaturatedblue hover:text-black ">Cancel Order</a>
+            <button class="mt-5 bg-Brightblue text-white rounded-lg w-full py-3 text-sm hover:bg-indigo-400 shadow-lg">Proceed to Payment</button>
+            <a href="" class="mt-4 text-Desaturatedblue hover:text-black ">Cancel Order</a>
+        </div>
       </div>
     </div>
+  </main>
+  <div class="text-sm text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-Brightblue" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ramz04" class="text-Brightblue">Abdul-Rahman Wunpini</a>.
   </div>
-
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
