@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&display=swap");
     </style>
     <!-- <style>
       @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
     </style> -->
-  
-  <title>Frontend Mentor | Order summary card</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            Paleblue: 'hsl(225, 100%, 94%)',
-            Brightblue: 'hsl(245, 75%, 52%)',
-            Verypaleblue: 'hsl(225, 100%, 98%)',
-            Desaturatedblue: 'hsl(224, 23%, 55%)',
-            Darkblue: 'hsl(223, 47%, 23%)',
-          },
-          backgroundImage:{
-            'pattern': "url('images/pattern-background-desktop.svg')",
-            'mbpattern':"url('images/pattern-background-desktop.svg')"
-          }
-        }
-      }
-    }
-  </script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body class="bg-Paleblue animate__animated animate__zoomIn bg-mbpattern md:pattern bg-blend-multiply object-cover bg-repeat-x h-screen " style="font-family: 'Red Hat Display', sans-serif;">
-  <main class="p-4 h-[100vh]  flex items-center justify-center">
-    <div class="rounded-2xl bg-white shadow-lg w-[320px]  md:w-[360px]">
-      <div class="md:flex flex-col">
-        <div class="">
-           <img src="images/illustration-hero.svg" alt="Hero Image" class="object-contain rounded-t-2xl">
-        </div>
-        <div class="flex flex-col items-center bg-white rounded-2xl opaccity-0  justify-center  p-6 ">
-          <h2 class="text-center font-black text-3xl text-Darkblue tracking-wide" >Order Summary</h2>
-          <p class="text-center text-Desaturatedblue mt-3">You can now listen to millions of songs, audiobooks, and podcasts on any 
-            device anywhere you like!</p>
-            <div class=" bg-Verypaleblue flex flex-row rounded-xl w-full  items-center justify-between gap-x-10 p-3  text-sm  mt-4 ">
-              <div class="flex justify-between gap-x-3  align-center">
-                <img src="images/icon-music.svg" alt="music icon" class="">
+    <title>Frontend Mentor | Order summary card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Paleblue: "hsl(225, 100%, 94%)",
+              Brightblue: "hsl(245, 75%, 52%)",
+              Verypaleblue: "hsl(225, 100%, 98%)",
+              Desaturatedblue: "hsl(224, 23%, 55%)",
+              Darkblue: "hsl(223, 47%, 23%)",
+            },
+            backgroundImage: {
+              pattern: "url('images/pattern-background-desktop.svg')",
+              mbpattern: "url('images/pattern-background-desktop.svg')",
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-Paleblue animate__animated animate__zoomIn bg-mbpattern md:pattern bg-blend-multiply object-cover bg-repeat-x h-screen"
+    style="font-family: 'Red Hat Display', sans-serif"
+  >
+    <main class="p-2 h-screen flex items-center justify-center">
+      <div class="rounded-2xl bg-white shadow-lg w-[360px] md:w-[400px] h-auto">
+        <div class="md:flex flex-col">
+          <div class="">
+            <img
+              src="images/illustration-hero.svg"
+              alt="Hero Image"
+              class="object-contain rounded-t-2xl"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center bg-white rounded-2xl opaccity-0 justify-center p-6"
+          >
+            <h2
+              class="text-center pt-2 font-black leading- text-[28px] tracking-tight text-Darkblue"
+            >
+              Order Summary
+            </h2>
+            <p class="text-center text-Desaturatedblue mt-3">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+            <div
+              class="bg-Verypaleblue flex flex-row rounded-xl w-full items-center justify-between gap-x-10 p-3 text-sm mt-5"
+            >
+              <div class="flex justify-between gap-x-3 align-center">
+                <img src="images/icon-music.svg" alt="music icon" class="" />
                 <div>
-                  <p class="text-Darkblue font-black" >Annual Plan</p>
-                  <p class="text-Desaturatedblue ">$59.99/year</p>
+                  <p class="text-Darkblue font-black">Annual Plan</p>
+                  <p class="text-Desaturatedblue">$59.99/year</p>
                 </div>
               </div>
-              <a href="#" class="text-Brightblue underline hover:no-underline hover:text-indigo-400"> Change</a>
+              <a
+                href="#"
+                class="text-Brightblue underline font-black hover:no-underline hover:text-indigo-400"
+              >
+                Change</a
+              >
             </div>
-            <button class="mt-5 bg-Brightblue text-white rounded-lg w-full py-3 text-sm hover:bg-indigo-400 shadow-lg">Proceed to Payment</button>
-            <a href="" class="mt-4 text-Desaturatedblue hover:text-black ">Cancel Order</a>
+            <button
+              class="mt-5 bg-Brightblue text-white font-black rounded-lg w-full py-3 text-sm hover:bg-indigo-400 shadow-lg"
+            >
+              Proceed to Payment
+            </button>
+            <a href="" class="mt-4 text-Desaturatedblue hover:text-black"
+              >Cancel Order</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
